@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="style-17.css">
+    <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+    <title>Creative clout</title>
+</head>
+<body>
+<div class="wrapper container">
+
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-tray" id="cursor-tray"></div>
+
+<div class="preloader">
+    <div class="preloader__title">creative clout</div>
+    <div class="preloader__text">Two vision</div>
+</div>
+
+<script>
+    window.onload = function () {
+        window.setTimeout(function () {
+            document.body.classList.add('loaded');
+        }, 1000);
+    }
+</script>
+<audio id="sound" src="./audio/bg.m4a"></audio>
+<audio loop id="sound-heart" src="./audio/heart.mp3"></audio>
+<audio id="sound-footer" src="./audio/footer.mp3"></audio>
+<audio id="sound-follow" src="./audio/follow.mp3"></audio>
+<audio id="sound-contact" src="./audio/contact.mp3"></audio>
+
+<video autoplay playsinline muted loop id="myVideo">
+    <source src="./video/bg.mp4" type="video/mp4">
+</video>
+<div class="my-video"></div>
+
+<div class="modal-window" id="modal-window">
+    <div class="modal-window__content" id="modal-content">
+
+        <div class="modal-window__wrapper">
+            <span>Email:</span>
+            <a class="modal-window__link" href="mailto:info@creativeclout.io">info@creativeclout.io</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="declaimer-modal" id="declaimer">
+    <div class="declaimer-modal__content">
+        <h3>declaimer</h3>
+        <span>This website and all content available through this website are provided to users "as is" without any express warranties or representations of any kind.  creative clout,  disclaims all representations, warranties, terms and conditions relating to this website and all content.  creative clout design. <br> <br>  creative clout.  shall not be liable for any damages arising out of or related to the access or use of the Website by its visitors. Any use of the content and trademarks including (but not limited to) reproduction, publication and any other form of exploitation of parts of the content designed by the Website without express consent is prohibited.  Previews from creative clout design, s.r.o.  Unauthorized use of the Website, Content, trademarks, or other intellectual and/or industrial property owned by Creative Clout,  It may result in monetary damages and other civil and criminal penalties for infringement of copyrights, trademarks, and other intellectual property rights.</span>
+    </div>
+</div>
+
+<div class="header container">
+<!--    <img class="header__logo" id="logo" src="./img/logo.png" alt="">-->
+    <div class="header__logo header__logo--mobile">Creative clout</div>
+    <button class="header__button" data-hover id="heart"></button>
+</div>
+
+<div class="main container" id="main">
+    <div class="main__contact" data-hover id="main-contact">
+        <div>
+            <span>Email:</span>
+            <a class="modal-window__link" href="mailto:info@creativeclout.io">info@creativeclout.io</a>
+
+        </div>
+     </div>
+    <div class="main__title" id="main-short">coming soon
+
+    </div>
+
+    <div class="info">
+        <div data-hover class="info__button" id="open-modal">contact <span>us</span>
+        <div data-hover class="info__round"></div>
+        </div>
+
+        <div class="info__block">
+            <span class="info__text">The two vasion</span>
+            <div class="info__block-item" id="info-item">
+                <span data-random>SI</span>
+                <span data-random>JNJ</span>
+                <span data-random>100</span>
+                <span data-random>355 N</span>
+                <span data-random>22</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer container">
+    <div class="footer__button footer__button--mobile" id="open-contact">contact <span>us</span></div>
+    <div class="footer__hr"></div>
+
+    <button id="footer-follow" data-hover class="footer__button">FOLLOW</button>
+    <button class="footer__button" data-hover id="declaimer-open">DECLAIMER</button>
+</div>
+</div>
+<script defer src="script.js"></script>
+</body>
+</html>
